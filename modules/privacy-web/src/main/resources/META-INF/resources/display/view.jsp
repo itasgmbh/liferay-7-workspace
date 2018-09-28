@@ -92,7 +92,7 @@
 			cookieName = "<%= PrivacyUtil.PRIVACY_READ %><%= nameExtend %>";
 			cookieValue = today.getTime();
 
-			document.cookie = cookieName+"="+escape(cookieValue)+ ";expires="+expire.toGMTString();
+			document.cookie = cookieName+"="+escape(cookieValue)+ ";expires="+expire.toGMTString()+"; path=/";
 
 			wrapper.removeClass('wrapper-for-privacy-portlet');
 		}
